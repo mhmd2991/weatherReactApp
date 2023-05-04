@@ -8,6 +8,11 @@ import Drizzle from "../../imgs/drizzle.png";
 
 import "./weather.css";
 
+/*
+This line defines a functional component called Weather.
+The component takes in a prop called weather,
+which is an object containing the weather data fetched from the API.
+*/
 export default function WeatherResult({ weather }) {
   let imgPath = "";
 
@@ -51,6 +56,7 @@ export default function WeatherResult({ weather }) {
     default:
       imgPath = "";
   }
+  
   return (
     <div className="weather-details">
       <div className="weather-img">
