@@ -1,0 +1,69 @@
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3.5rem 2rem 3.5rem;
+    text-align: center;
+}
+
+.weather-details .weather-img {
+    width: 17rem;
+    margin: 0 auto;
+}
+
+.weather-details .weather-img img {
+    max-width: 100%;
+}
+
+.weather-details .temperature {
+    font-size: 5rem;
+    color: var(--whiteColor);
+}
+
+.weather-details .city {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.weather-details .desc {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.weather-details .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+    display: flex;
+    gap: 1rem;
+    color: var(--whiteColor);
+}
+
+.weather-details .details i {
+    font-size: 4rem;
+}
+
+.weather-details .details .humidity .humidity-details,
+.weather-details .details .wind .wind-details {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.fade-in {
+    animation: fade-in .5s forwards;
+    animation-delay: .5s;
+}
+
+@keyframes fade-in {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

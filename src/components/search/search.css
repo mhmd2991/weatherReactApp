@@ -1,0 +1,47 @@
+.form-container {
+  padding: 4rem 3.5rem;
+  border-radius: 2rem;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group .fa-location-dot {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+}
+
+.form-group input {
+  width: 100%;
+  height: 6rem;
+  padding: 1rem 2.5rem 1rem 4.5rem;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  flex: 1;
+}
+
+.form-group input:focus::placeholder {
+    opacity: 0;
+}
+
+.form-group .search-btn {
+    position: absolute;
+    top: 50%;
+    right: 2.5rem;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;   
+}
